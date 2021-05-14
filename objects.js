@@ -14,14 +14,15 @@
 */
 
 const me = {
-  firstName: "firstName",
-  state: "state",
+  firstName: "Taylor",
+  state: "UT",
   age: 30,
-  greeter() {
-    return `Hello! my name is ${firstName} and I live in ${state}`;
+  greeter: function () {
+    return `Hello! my name is ${this.firstName} and I live in ${this.state}`;
   },
 };
-
+console.log(me);
+console.log(me.greeter());
 //////////////////PROBLEM 2////////////////////
 /*
   Write a function called carFactory that takes in three parameters: a make, model, and year.  
@@ -59,4 +60,4 @@ function carFactory(make, model, year) {
   }
   return carFactory;
 }
-console.log(carFactory("Toyota", "Camery", 2019));
+console.log(carFactory("Toyota", "Camry", 2019));
