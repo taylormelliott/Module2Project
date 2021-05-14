@@ -7,6 +7,7 @@
 function sum(num1, num2) {
   return num1 + num2;
 }
+console.log(sum(2, 5));
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -23,7 +24,7 @@ function greaterThanFive(number) {
     return fasle;
   }
 }
-
+console.log(greaterThanFive(7));
 //////////////////PROBLEM 3////////////////////
 /*
   Create a function called 'findZWords' that takes in one parameter, 'word'. 
@@ -33,13 +34,13 @@ function greaterThanFive(number) {
 */
 
 function findZWords(word) {
-  if (word.startwith(Z)) {
+  if (word.startsWith("Z")) {
     return "the name begins with Z";
   } else {
     return "the name does not begin with Z";
   }
 }
-
+console.log(findZWords("Zerelda"));
 //////////////////PROBLEM 4////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
